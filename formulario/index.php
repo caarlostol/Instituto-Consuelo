@@ -4,17 +4,17 @@
     {
         include_once('config.php');
         
-        $nome = mysqli_real_escape_string($conexao, $_POST['nome']);
-        $email = mysqli_real_escape_string($conexao, $_POST['email']);
-        $telefone = mysqli_real_escape_string($conexao, $_POST['telefone']);
-        $sexo = mysqli_real_escape_string($conexao, $_POST['sexo']);
-        $data_nasc = mysqli_real_escape_string($conexao, $_POST['data_nascimento']);
-        $endereço = mysqli_real_escape_string($conexao, $_POST['endereço']);
-        $cidade = mysqli_real_escape_string($conexao, $_POST['cidade']);
-        $estado = mysqli_real_escape_string($conexao, $_POST['estado']);
+        $Nome = mysqli_real_escape_string($conexao, $_POST['nome']);
+        $Email = mysqli_real_escape_string($conexao, $_POST['email']);
+        $Telefone = mysqli_real_escape_string($conexao, $_POST['telefone']);
+        $Sexo = mysqli_real_escape_string($conexao, $_POST['sexo']);
+        $Data_nasc = mysqli_real_escape_string($conexao, $_POST['data_nascimento']);
+        $Endereco = mysqli_real_escape_string($conexao, $_POST['endereco']);
+        $Cidade = mysqli_real_escape_string($conexao, $_POST['cidade']);
+        $Estado = mysqli_real_escape_string($conexao, $_POST['estado']);
 
-        $query = "INSERT INTO usuarios (nome, email, telefone, sexo, data_nasc, endereço, cidade, estado) 
-                  VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nasc', '$endereço', '$cidade', '$estado')";
+        $query = "INSERT INTO usuario (nome, email, telefone, sexo, data_nasc, endereco, cidade, estado) 
+                  VALUES ('$Nome', '$Email', '$Telefone', '$Sexo', '$Data_nasc', '$Endereco', '$Cidade', '$Estado')";
 
         $result = mysqli_query($conexao, $query);
 
@@ -112,8 +112,8 @@
                 <input type="date" name="data_nascimento" id="data_nascimento" required>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="endereço" id="endereço" class="inputUser" required>
-                    <label for="endereço" class="labelInput">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelInput">Endereço</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
