@@ -80,7 +80,7 @@
         };
     </script>
     <div class="box">
-        <form action="formulario.php" method="POST">
+        <form action="index.php" method="POST">
             <fieldset>
                 <legend><b>Fórmulário de Cadastro</b></legend>
                 <br>
