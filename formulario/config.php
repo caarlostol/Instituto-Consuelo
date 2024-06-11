@@ -1,6 +1,6 @@
 <?php
 
-$dbHost = 'viaduct.proxy.rlwy.net';
+$dbHost = 'monorail.proxy.rlwy.net';
 $dbUsername = 'root';
 $dbPassword = 'wzuZypNgkiNjgriDfggYLyjZmLuBFHCw';
 $dbName = 'railway';
