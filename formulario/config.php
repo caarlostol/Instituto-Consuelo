@@ -1,9 +1,9 @@
 <?php
 
-$dbHost = 'localhost';
+$dbHost = 'viaduct.proxy.rlwy.net';
 $dbUsername = 'root';
-$dbPassword = 'Consuelo@';
-$dbName = 'formulario_consuelo';
+$dbPassword = 'wzuZypNgkiNjgriDfggYLyjZmLuBFHCw';
+$dbName = 'railway';
 
 $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
@@ -11,7 +11,7 @@ $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 //     echo "Erro na conexão";
 // } 
 // else{
-//     echo "Conexão efetuada!"
+//     echo "Conexão efetuada!";
 // }
 
 ?>
